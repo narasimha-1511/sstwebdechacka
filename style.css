@@ -1,0 +1,365 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background: lightblue;
+    font-family: Arial, sans-serif; /* Change to your preferred font */
+    color: #fff; /* Change to your preferred color */
+}
+
+.sidebar {
+    height: 100%;
+    width: 400px;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    background-color: #131318; /* Darker background for contrast */
+    overflow-x: hidden;
+    padding-top: 20px;
+    transition: 0.5s;
+}
+
+.sidebar h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    color: #fff; /* White color for the name */
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+/* Change the color on hover */
+
+.profile-oval {
+    display: block;
+    margin: 0 auto; /* Center the image */
+    width: 150px;
+    height: 180px;
+    border-radius: 50%;
+    border: 6px solid grey; /* White border around the image */
+}
+
+@keyframes animateLeft {
+    from {
+        left: -250px;
+    }
+    to {
+        left: 0;
+    }
+}
+
+/* //side bar icons */
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    padding: 4px;
+    cursor: pointer;
+}
+.icons img{
+    width: 50px;
+    height: 50px;
+    margin: 0 7px;
+    border-radius:  80%;
+}
+
+.main-content {
+    margin-left: 400px;
+    padding: 20px; /* Add some padding */
+}
+
+.blocks{
+    margin-top: 40px;
+}
+
+
+.blocks .items {
+    display: block;
+    text-align: center;
+    padding: 32px 64px;
+    color: white;
+    font-size: 24px;
+    text-align: left;
+    border: none;
+    white-space: normal;
+    align-items: center;
+    float: none;
+    outline: 0;
+    background-color: #131318;
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* Add transition for smooth hover effect */
+
+}
+
+.blocks,.items:hover {
+color: rgb(175, 187, 186);
+background-color: rgba(214, 55, 55, 0.1); /* Add background color on hover */
+}
+
+.icons-items{
+    margin-right: 16px;
+}
+
+.icons-items img{
+    width: 70px;
+    height: 70px;
+    margin: 0 7px;
+    border-radius:  80%;
+}
+
+.copyright {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    padding: 10px 0;
+    padding-bottom: 50px;
+}
+
+#home {
+    background-image: url('./images/profile-img.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust as needed */
+}
+
+.blink {
+    font-size: 60px;
+    /* Other styles */
+    border-right: .2em solid blue; /* Cursor-like */
+    white-space: nowrap; /* Keep the content on the same line */
+    overflow: hidden; /* Ensure the content is only shown in the .blink container */
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite; /* Typing animation */
+}
+
+/* Typing effect */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+/* Cursor animations */
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: blue; }
+}
+
+ #about span {
+    border-bottom: 2px solid #000; /* Change to your preferred color */
+    color: darkblue
+}
+
+#about {
+    /* margin-left: 40px; */
+    background-color: white;
+    color: black;
+    padding: 20px;
+    height: auto;
+}
+
+.about-inside {
+    display: flex;
+    align-items: start; /* Align items at the start */
+}
+
+.about-image {
+    /* Other styles */
+    flex: 0.5   ; /* Take up 1 part of the available space */
+    width: 300px;
+}
+
+.about-content {
+    /* Other styles */
+    margin-left: 20px;
+    flex: 2; /* Take up 2 parts of the available space */
+}
+
+.arrow-list {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none; /* Remove default bullet points */
+    padding-left: 0; /* Remove default padding */
+    
+}
+
+.arrow-list li {
+    padding: 10px 0; /* Add vertical padding */
+    /* border-bottom: 1px solid #ccc; Add a bottom border */
+}
+
+
+.arrow-list li:before {
+    content: "→ "; /* Add arrow before each list item */
+   margin: 3px;
+}
+
+#resume {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    height: auto;
+}
+
+
+#resume span {
+    border-bottom: 2px solid #000; /* Change to your preferred color */
+    color: darkblue
+}
+
+#resume p {
+   margin : 20px 0;         
+}
+
+/* ?? for resume */
+
+.timeline {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    background-color: #333;
+    left: 50%;
+    top: 0;
+}
+
+.timeline-item {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+.timeline-item::before {
+    content: ' ';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline-item .year {
+    font-weight: bold;
+}
+
+.timeline-item:nth-child(even) {
+    left: 50%;
+}
+
+.timeline-item:nth-child(even)::before {
+    left: -17px;
+}
+
+.timeline-item .content {
+    padding: 20px 30px;
+    background-color: whitesmoke;
+    position: relative;
+    border-radius: 6px;
+}
+/* completed for resums */
+
+#portfolio {
+    align-content: center;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    height: auto;
+}
+
+#portfolio span {
+    border-bottom: 2px solid #000; /* Change to your preferred color */
+    color: darkblue
+}
+
+#services {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    height: auto;
+}
+
+#services span {
+    border-bottom: 2px solid #000; /* Change to your preferred color */
+    color: darkblue
+}
+
+
+
+#contact {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    height: auto;
+}
+
+#contact span {
+    border-bottom: 2px solid #000; /* Change to your preferred color */
+    color: darkblue
+}
+
+
+.profile-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+.profile-info {
+    text-align: center;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 180px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+}
+
+.quote {
+    text-align: center;
+}
+
+.quote p {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.quote p:last-child {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+
+.items.active {
+    color:  rgb(10, 148, 194); /* Change to your preferred color */
+    /* Add other styles as needed */
+}
