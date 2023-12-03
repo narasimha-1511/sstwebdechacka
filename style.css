@@ -49,8 +49,8 @@ html{
 }
 
 #twitter{
-    /height: 4vh;/
-    /width: 4vw;/
+    height: 4vh;
+    width: 4vw;
     background: rgb(30,33,45);
     border-radius: 50%;
     padding: 0.5rem;
@@ -58,24 +58,24 @@ html{
 }
 
 #facebook{
-    /height: 4vh;/
-    /width: 4vw;/
+    height: 4vh;
+    width: 4vw;
     background: rgb(30,33,45);
     border-radius: 50%;
     padding: 0.5rem;
 }
 
 #linkedin{
-    /height: 4vh;/
-    /width: 4vw;/
+    height: 4vh;
+    width: 4vw;
     background: rgb(30,33,45);
     border-radius: 50%;
     padding: 0.5rem;
 }
 
 #instagram{
-    /height: 4vh;/
-    /width: 4vw;/
+    height: 4vh;
+    width: 4vw;
     background: rgb(30,33,45);
     border-radius: 50%;
     padding: 0.5rem;
@@ -214,10 +214,10 @@ u{
     position: absolute;
     top: 100vh;
     width: 70vw;
-    /overflow: hidden;/
+    overflow: hidden;
     
 
-    /padding: 30px;/
+    padding: 30px;
 
 }
 
@@ -235,9 +235,9 @@ u{
     display: flex;
     margin-top: 20px;
     margin-right: 0vw;
-    /flex-wrap: wrap;/
+    flex-wrap: wrap;
     width: 65vw;
-    /margin-left: 0px;/
+    margin-left: 0px;
 
 
 }
@@ -465,7 +465,7 @@ u{
     margin-left: 30px;
 }
 #Portfolio1{
-    /background-color: rgb(245,245,251);/
+    background-color: rgb(245,245,251);
 }
 
 .portfolio-content{
@@ -489,9 +489,6 @@ u{
     gap: 0.8rem;
 }
 
-.portfolio-filter-div{
-
-}
 
 .portfolio-filter-links{
     text-decoration: none;
@@ -524,7 +521,7 @@ u{
     margin-left: 30px;
 }
 #Services1{
-    /background-color: rgb(245,245,251);/
+    background-color: rgb(245,245,251);
 }
 
 
@@ -562,7 +559,7 @@ u{
     margin-left: 30px;
 }
 #Portfolio1{
-    /background-color: rgb(245,245,251);/
+    background-color: rgb(245,245,251);
 }
 .testimonial-message{
     display: flex;
@@ -620,7 +617,7 @@ u{
     background-color: rgb(245,245,251);
     box-shadow: black;
 
-    /align-items: center;/
+    align-items: center;
     margin-left: 30px;
     width: 33vw;
     border-radius: 10px;
