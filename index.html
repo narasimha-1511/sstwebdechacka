@@ -1,163 +1,781 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio</title>
+    <link rel="shortcut icon" href="images\favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="sidebar">
-        <br>
-        <img src="./images/profile-img.jpg" class="profile-oval" alt="Profile Picture">
-        <h2>Harry</h2>
-            <div class="icons">
-            <img src="./images/sidebar-icons/facebook-icon.png" alt="facebook-icon" >
-            <img src="./images/sidebar-icons/insta-icon.png" alt="instagram-icon" >
-            <img src="./images/sidebar-icons/linkedin-icon.png" alt="linkedin-icon" >
-            <img src="./images/sidebar-icons/twitter-icon.png" alt="twitter-icon" >
-            <img src="./images/sidebar-icons/skype-icon.png" alt="skype-icon" >
-        </div>
-        <div class="blocks">
-            <a href="#home" class="items"> <img src="images/sidebar-icons/home-icon.svg" class="icons-items" ></img>Home</a>
-            <a href="#about" class="items"> <img src="images/sidebar-icons/about-icon.svg" class="icons-items"></img>About Me</a>
-            <a href="#resume" class="items"> <img src="images/sidebar-icons/resume-icon.svg" class="icons-items"></img>Resume</a>
-            <a href="#portfolio" class="items"> <img src="images/sidebar-icons/portfolio-icon.svg" class="icons-items"></img>Portfolio</a>
-            <a href="#services" class="items"> <img src="images/sidebar-icons/services-icon.svg" class="icons-items"></img>Services</a>
-            <a href="#contact" class="items"> <img src="images/sidebar-icons/contact-icom.svg" class="icons-items"></img>Contact</a>
-        </div>
-
-        <div class="copyright">
-            &copy; 2020. All rights reserved.
-            <br><br>
-            Desinged and Developed by <span class="name">Narasimha</span>
-        </div>
-      
-    </div>
-
-        <div class="main-content">
-
-        <div id="home"> 
-            <span class="blink"> Hi I'm FreeLancer!!</span>
-         </div>
-        <div id="about">
-            <h1><span style="font-size: 50px;">About</span></h1>
-            <p>Lorem ipsum dolor, sit amet consectetur Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio repellat veritatis aut, consequuntur ab adipisci, architecto nesciunt consequatur ipsum mollitia, molestiae dolore eum tenetur soluta cumque quia fuga! Id, sunt.</p>
-
-            <div class="about-inside">
-                <img src="./images/profile-img.jpg" alt="About Image" class="about-image">
-                <div class="about-content">
-                    <h1><span >UI/UX Designer and Web Developer.</span></h1>
-                    <p>Lorem ipsum dolor sit amet consspan >UI/UX Designer and Web Developer.</sectetur adipisicing elit. Ducimus nihil eius officiis doloribus laboriosam asperiores corporis voluptates sequi soluta impedit!</p>
-                    <ul class="arrow-list">
-                        <div>
-                        <li><strong>Birthday: </strong> 15 Nov 2005</li>
-                        <li><strong>Age: </strong> 18</li>
-                        <li><strong>Phone: </strong>+91 6532987456</li>
-                        </div>
-                        <div>
-                        <li><strong>City: </strong>Hyderabad</li>
-                        <li><strong>Freelance: </strong> Available</li>
-                        <li><strong>Degree: </strong>UderGraduate</li>
-                    </div>
-                    </ul>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nisi animi provident, necessitatibus odio consectetur saepe iure non mollitia impedit porro nostrum quisquam veritatis eos et ratione eveniet culpa ducimus alias excepturi! Doloremque, vel vero incidunt obcaecati dignissimos eum natus? Repellat expedita reiciendis minima ipsum deleniti, ipsa voluptatum consequuntur, omnis nemo est veniam tempore nihil obcaecati. Aliquam, quidem obcaecati fugit facilis excepturi a suscipit recusandae sed magni quia sint doloribus explicabo, animi nisi dolorem ducimus. Architecto nobis eligendi fugit ea aliquid ipsam commodi tempore accusamus possimus illo, sed alias natus excepturi corrupti iste sint itaque ab dolorem quo accusantium totam?</p>
-                </div>
+<section class = "container">
+    <aside class = "sidebar">
+        <div class = "profile">
+            <div class = "image">
+                <img src="images/profile-img.jpg" alt="image" id = "profile-image">
             </div>
-        </div>
-        <!-- Facts that normally neededd -->
-        <div id="resume"> 
-             <h1><span style="font-size: 50px;">Resume</span></h1>
+            <div class="text">
+                <span>
+                    Harry
+                </span>
+            </div>
 
-             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab fuga laboriosam maiores accusantium expedita vitae natus voluptate quod molestias omnis obcaecati eligendi nobis suscipit itaque, non quidem illo cumque veniam eum minus possimus rem? Culpa debitis autem repudiandae pariatur dolorum amet odit quibusdam laudantium tempore cumque animi reprehenderit, tenetur recusandae?</p>
+            <div class = "links">
+                <div>
+                    <a href="https://twitter.com/login">
+                        <img id = "twitter" src="images\twitter.portfolio.svg" alt="image 1">
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.facebook.com/">
+                        <img id = "facebook" src="images\facebook.svg" alt="image 2">
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.linkedin.com/">
+                        <img id = "linkedin" src="images\linkedin.svg" alt="image 3">
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.instagram.com/">
+                        <img id = "instagram" src="images\instagram.port.svg" alt="image 4">
+                    </a>
+                </div>
 
-             <div class="timeline">
-                <div class="timeline-item">
-                    <span class="year">2023 - Present</span>
-                    <div class="content">
-                        <h3>Experion , New York,NY</h3>
-                        <p>Lead in the Desing , development and implimentaion of the graphic layout and production communication</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <span class="year">2017 - 2022</span>
-                    <div class="content">
-                        <h3>Stepping Stone Advertisinf , New york ,NY</h3>
-                        <p> Developed Numerous marketing programs</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <span class="year">2015 - 2016</span>
-                    <div class="content">
-                        <h3>Master of Fine Arts & Graphic Desing</h3>
-                        <p> Rocher Institue Of Technology , NY</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <span class="year">2010 - 2014</span>
-                    <div class="content">
-                        <h3>Bachelor Of Fine Arts & Graphic Desing</h3>
-                        <p> Rocher Institue Of Technology , NY</p>
-                    </div>
-                </div>
             </div>
 
         </div>
-        <div id="portfolio"> 
-            <h1><span>Portfolio</span></h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, error et tenetur quis fugit deleniti quae ipsum est veniam numquam impedit molestias doloribus vero id animi cupiditate omnis repellendus excepturi repudiandae ullam sint? Impedit consequatur earum sequi odio sint non. Magnam ipsum ipsam odit quas ex adipisci repellendus voluptate molestias nulla accusamus fuga perferendis, saepe deleniti minus itaque pariatur architecto expedita. Tenetur sit, deleniti perferendis error mollitia ullam hic ducimus! Ad, ipsum corrupti, numquam quidem earum velit sint amet sunt sed consequatur mollitia fuga laudantium eaque reiciendis nulla consequuntur, recusandae obcaecati ducimus in consectetur aliquid officia laboriosam fugiat accusamus? Iure nisi, amet officia aliquam magni veritatis dolore in rem voluptas fugit excepturi soluta perferendis debitis sequi, libero ipsa quam ducimus eos earum nemo reiciendis. Tempora reiciendis, facilis doloribus quisquam iusto sequi assumenda perferendis sint repellendus libero ipsum blanditiis illum. Ducimus debitis fuga repudiandae asperiores, temporibus, impedit distinctio tenetur consequuntur delectus obcaecati aliquam recusandae eum soluta neque aperiam natus deserunt quae quos maxime perspiciatis excepturi deleniti. Earum qui corporis illum. Sed blanditiis ipsum, dolorum doloremque temporibus odit dolore illo, unde tenetur nemo consequatur suscipit eos. Corrupti quia laudantium, vel amet rerum rem tempora vero, ipsam perspiciatis sed, eius enim nihil omnis.</p>
+
+        <div class = "content">
+            <a href="#Home1" class = "image-content-link">
+                <div class = "image-content">
+                    <div>
+                        <img id = "Home" src="images\house-solid.svg" alt="home">
+                    </div>
+                    <div id = "Home-Text">
+                        Home
+                    </div>
+                </div>
+            </a>
             
+            <div class = "image-content">
+                <a href="#About1" class = "image-content-link">
+                    <div>
+                        <img id = "About" src="images\house-solid.svg" alt="about">
+                    </div>
+                    <div id = "About-Text">
+                        About
+                    </div>
+                </a>
+                    
+            </div>
+            
+            <div class = "image-content">
+                <a href="#Resume1" class = "image-content-link">
+                    <div>
+                        <img id = "Resume" src="images\resume.svg" alt="Resume">
+                    </div>
+                    <div id = "Resume-Text">
+                        Resume
+                    </div>
+                </a>
+            </div>
+            
+            <div class = "image-content">
+                <a href="#Portfolio1" class = "image-content-link">
+                    <div>
+                        <img id = "Portfolio" src="images\contact.svg" alt="portfolio">
+                    </div>
+                    <div id="Portfolio-Text">
+                        Portfolio
+                    </div>
+                </a>
+            </div>
+            
+            <div class = "image-content">
+                <a href="#Services1" class = "image-content-link">
+                    <div>
+                        <img id = "Services" src="images\contact.svg" alt="Services">
+                    </div>
+                    <div id = "Services-Text">
+                        Services
+                    </div>
+                </a>
+            </div>
+            
+            <div class = "image-content">
+                <a href="#Contact1" class = "image-content-link">
+                    <div>
+                        <img id = "Contact" src="images\youtube.svg" alt="Contact">
+                    </div>
+                    <div id = "Contact-Text">
+                        Contact
+                    </div>
+                </a>
+            </div>
 
-        
         </div>
-        <div id="services"> 
-            <h1><span>Testimonals</span></h1>
 
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi dolorum rerum magni architecto obcaecati temporibus, optio illo error amet, ab excepturi. Dolorem error quos ad explicabo ipsam eveniet molestias praesentium    </p>
-        
-            <div class="profile-section">
-                <div class="profile-info">
-                    <img src="images/profile-img.jpg" alt="Profile Picture" class="profile-pic">
-                    <div class="social-icons">
-                        <img src="images/sidebar-icons/facebook-icon.png" alt="Facebook">
-                        <img src="images/sidebar-icons/twitter-icon.png" alt="Twitter">
-                        <img src="images/sidebar-icons/insta-icon.png" alt="Instagram">
+
+        <div class = "aside-footer">
+            <div id ="copyright">
+                &#169; Copyright LOREM IPSUM.
+            </div>
+            <div id = "git">
+                Designed by : <a id = "git-Link" href=""> BHAVYA JAIN</a>
+            </div>
+        </div>
+
+    </aside>
+
+    <aside class = "part2">
+        <div id = "Home1">
+
+        </div>
+        <div class = "part2-image">
+            <div class = "text-on-image">
+                <div id = "name">
+                    Harry
+                </div>
+                <div id = "occupation">
+                    I'm an
+                    <span class = "Typewriter1">
+                        <u color = blue><font color = blue><b>Freelancer</b></font></u>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class = "info-section">
+            <div id = "About1">
+                <div class = "about-section">
+                    <h2>
+                        About
+                    </h2>
+                    <br>
+
+                    <hr size = "10px" color = blue width = 5% >
+                    <div class = "para-text">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet at, cumque delectus doloremque, eligendi fugit laborum laudantium nesciunt optio perspiciatis, provident quod sed. Eligendi, illo.
+                        </p>
+                    </div>
+                    <div class = "image-text-heading">
+                        <div id = "image-about">
+                            <img src="images/profile-img.jpg" alt="image" id = "image-about-1">
+                        </div>
+
+                        <div class = "image-text-heading-text">
+                            <div id = "heading">
+                                <h2 id = "image-text-heading-text-heading">UI/UX</h2>
+                            </div>
+                            <div>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt distinctio eaque nostrum repellendus, sint vitae!
+                            </div>
+                            <div class = "details">
+                                <div class = "details-1">
+                                    <div>&gt; <b>Birthday</b>: 11th June 2005</div>
+                                    <div>&gt; <b>Age</b>: 18</div>
+                                </div>
+                                <div class = "details-1">
+                                    <div>&gt; <b>Website</b>: www.google.com</div>
+                                    <div>&gt; <b>Degree</b>: Bsc</div>
+                                </div>
+                                <div class = "details-1">
+                                    <div>&gt; <b>Phone</b>: 7990047081</div>
+                                    <div>&gt; <b>email</b>: abc@gmail.com</div>
+                                </div>
+                                <div class = "details-1">
+                                    <div>&gt; <b>City</b>: vadodara</div>
+                                    <div>&gt; <b>Freelance</b>: Available</div>
+                                </div>
+                            </div>
+                            <div>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, amet atque autem corporis debitis hic illum maxime nemo, optio quae quas saepe sequi temporibus ullam, vel? Ab, commodi consequuntur id iure, modi natus quaerat quam quisquam quo veniam veritatis vero.
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="quote">
-                    <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit iste quam expedita ipsum mollitia labore, voluptatibus nihil totam ad blanditiis earum est recusandae, exercitationem voluptate?."</p>
-                    <p>Harry</p>
+            </div>
+            <div id = "facts1">
+                <div class = "facts-section">
+                    <h2>
+                        Facts
+                    </h2>
+                    <br>
+                    <hr size = "10px" color = blue width = 5% >
+                    <div class = "para-text">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cum deleniti deserunt, explicabo ipsam odit sequi soluta vitae voluptates! Assumenda at ipsam libero maxime omnis possimus quia ullam voluptates! Explicabo!
+                        </p>
+                    </div>
+                    <div class = "emojis">
+                        <div class = "emojis-box-1">
+                            <div>
+                                <img src="images\testimonials\face-smile-regular.svg" alt="smile">
+                            </div>
+                            <div class = "det">
+                                <div>
+                                    <span id = "clients"><font size = "5"> <b>232</b></font></span>
+                                </div>
+                                <div>
+                                    <span> <b>Happy Clients</b></span>
+                                    <div> Lorem ipsum</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class = "emojis-box-1">
+                            <div>
+                                <img src="images\testimonials\diagram-project-solid.svg" alt="smile">
+                            </div>
+                            <div class = "det">
+                                <div>
+                                    <span id = "projects"><font size = "5"> <b>521</b></font></span>
+                                </div>
+                                <div>
+                                    <span> <b>Projects</b></span>
+                                    <div> Lorem ipsum</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class = "emojis-box-1">
+                            <div>
+                                <img src="images\testimonials\phone-solid.svg" alt="smile">
+                            </div>
+                            <div class = "det">
+                                <div>
+                                    <span id = "HrsOfSupport"><font size = "5"> <b>1453</b></font></span>
+                                </div>
+                                <div>
+                                    <span> <b>Hours Of Support</b></span>
+                                    <div> Lorem ipsum blasum</div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class = "emojis-box-1">
+                            <div>
+                                <img src="images\testimonials\user-solid.svg" alt="smile">
+                            </div>
+                            <div class = "det">
+                                <div>
+                                    <span id = "hardworkers"><font size = "5"> <b>32</b></font></span>
+                                </div>
+                                <div>
+                                    <span> <b>Hard Workers</b></span>
+                                    <div> Lorem ipsum blasum</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
+            <div class = "skills1">
+                <div class = "skills-section">
+                    <h2 id = "sk">
+                        Skills
+                    </h2>
+                    <br>
+                    <hr size = "10px" color = blue width = 5% id = "hr">
+                    <div class = "para-text" id = "p">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cum deleniti deserunt, explicabo ipsam odit sequi soluta vitae voluptates! Assumenda at ipsam libero maxime omnis possimus quia ullam voluptates! Explicabo!
+                        </p>
+                    </div>
 
+                    <div class="skill_test">
+
+
+                        <div class="skill_left">
+                            <div class="skill">
+                                <div class = "s-text">
+                                    <b><span>HTML</span></b>
+                                    <b><span>100%</span></b>
+                                </div>
+                                <div class="progress">
+                                    <div class="percentage" style="width:100%"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class = "s-text">
+                                    <b><span>CSS</span></b>
+                                    <b><span>90%</span></b>
+                                </div>
+                                <div class="progress">
+                                    <div class="percentage" style="width:90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class = "s-text">
+                                    <b><span>Javascript</span></b>
+                                    <b><span>75%</span></b>
+                                </div>
+                                <div class="progress">
+                                    <div class="percentage" style="width:80%"></div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="skill_right">
+                            <div class="skill">
+                                <div class = "s-text">
+                                    <b><span>PHP</span></b>
+                                    <b><span>80%</span></b>
+                                </div>
+                                <div class="progress">
+                                    <div class="percentage" style="width:75%"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class = "s-text">
+                                    <b><span>Wordpress/CMS</span></b>
+                                    <b><span>90%</span></b>
+                                </div>
+                                <div class="progress">
+                                    <div class="percentage" style="width:80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class = "s-text">
+                                    <b><span>Photoshop</span></b>
+                                    <b><span>75%</span></b>
+                                </div>
+                                <div class="progress">
+                                    <div class="percentage" style="width:75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class = "resume1">
+                <div class = "resume-section">
+                    <h2 id = "Resume1">
+                        Resume
+                    </h2>
+                    <br>
+                    <hr size = "10px" color = blue width = 5% id = "hr1">
+                    <div class = "para-text" id = "p1">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cum deleniti deserunt, explicabo ipsam odit sequi soluta vitae voluptates! Assumenda at ipsam libero maxime omnis possimus quia ullam voluptates! Explicabo!
+                        </p>
+                    </div>
+                    <div class="heading">
+                        <div><b>Summary</b></div>
+                        <div><b>Profession Experience</b></div>
+                    </div>
+                    <br>
+                    <div class = "resume-content">
+                        <div class = "resume-content-left">
+                            <div class = "resume-content-left-1">
+                                <div class = resume-image>
+                                    <img height = 150vh src="left%20resume%20image.png" alt="">
+                                </div>
+                                <div>
+                                    <div>
+                                        <b>Harry</b>
+                                    </div>
+                                    <div>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dolorem eveniet quasi ullam. Consequuntur delectus distinctio dolore ex, minima necessitatibus placeat praesentium similique temporibus unde!
+                                    </div>
+                                    <div class = "resume-content-list-1">
+                                        <ul>
+                                            <li>Vadodara 2023</li>
+                                            <li>7990047081</li>
+                                            <li>abc@gmail.com</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <b>Education</b>
+                            </div>
+
+                            <div class = "resume-content-left-2">
+                                <div class = resume-image>
+                                    <img height = 150vh src="left%20resume%20image.png" alt="">
+                                </div>
+                                <div>
+                                    <div id = "degree">
+                                        <b>MASTER OF FINE ARTS & DESIGN/GRAPHICS</b>
+                                    </div>
+                                    <div id = "resume-span-div">
+                                        <span id = "resume-span">2015-2017</span>
+                                    </div>
+                                    <div class = "institute">
+                                        Scaler School Of Technology, Bengaluru, India.
+                                    </div>
+                                    <div>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores atque commodi dolores doloribus, exercitationem inventore libero mollitia quaerat quasi reiciendis, repellat sit soluta sunt, vitae!
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class = resume-content-left-3>
+                                <div class = resume-image>
+                                    <img height = 150vh src="left%20resume%20image.png" alt="">
+                                </div>
+                                <div>
+                                    <div id = "degree2">
+                                        <b>BACHELOR OF SCIENCE IN COMPUTER SCIENCE</b>
+                                    </div>
+                                    <div id = "resume-span-div-2">
+                                        <span id = "resume-span-2">2017-2021</span>
+                                    </div>
+                                    <div class = "institute">
+                                        Scaler School Of Technology, Bengaluru, India.
+                                    </div>
+                                    <br>
+                                    <div>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab adipisci odit praesentium quia? Dolore enim eveniet exercitationem facere fuga fugit illo ipsam nemo voluptatem.
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class = "resume-content-right">
+                            <div class = "resume-content-right-1">
+                                <img height = 465vh src="resum%20right%20image.png" alt="">
+                            </div>
+
+                            <div class = resume-right-content>
+                                <div>
+                                    <b>SENIOR GRAPHIC DESIGN SPECIALIST</b>
+                                </div>
+                                <br>
+                                <div id = "resume-span-div-3">
+                                    <span id = "resume-span-3">2017-2021</span>
+                                </div>
+                                <div class = "institute">
+                                    Experion, New York, NY.
+                                </div>
+                                <div class = "resume-content-list-1">
+                                    <ul>
+                                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dignissimos in ipsa itaque minima nobis?</li>
+                                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, facere fugiat harum itaque officiis sed?</li>
+                                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim eos, exercitationem impedit odio odit sunt.</li>
+                                    </ul>
+                                </div>
+                                <br>
+                                <div>
+                                    <b>GRAPHIC DESIGN SPECIALIST</b>
+                                </div>
+                                <div id = "resume-span-div-4">
+                                    <span id = "resume-span-4">2017-2021</span>
+                                </div>
+                                <div class = "institute">
+                                    Experion, New York, NY.
+                                </div>
+                                <br>
+                                <div class = "resume-content-list-1">
+                                    <ul>
+                                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, ut!</li>
+                                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos mollitia odit quaerat? Magnam, nisi.</li>
+                                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, facilis, quaerat.</li>
+                                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam illo magni qui quod.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "Portfolio1">
+                <div class = "portfolio-section">
+                    <h2 id = "Portfolio1">
+                        Portfolio
+                    </h2>
+                    <br>
+                    <hr size = "10px" color = blue width = 5% id = "hr2">
+                    <div class = "para-text" id = "p2">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cum deleniti deserunt, explicabo ipsam odit sequi soluta vitae voluptates! Assumenda at ipsam libero maxime omnis possimus quia ullam voluptates! Explicabo!
+                        </p>
+                    </div>
+                    <br>
+                    <div class = "porfolio-content">
+                        <div class = "portfolio-filter">
+                            <div class = "portfolio-filter-div"><a href="" class = "portfolio-filter-links">All</a></div>
+                            <div class = "portfolio-filter-div"><a href="" class = "portfolio-filter-links">App</a></div>
+                            <div class = "portfolio-filter-div"><a href="" class = "portfolio-filter-links">Card</a></div>
+                            <div class = "portfolio-filter-div"><a href="" class = "portfolio-filter-links">web</a></div>
+                        </div>
+                        <br>
+
+                        <div class = "portfolio-filter-images">
+
+                            <div><img class = "portfolio-filter-images-image" src="images/portfolio/portfolio-7.jpg" alt=""></div>
+                            <div><img class = "portfolio-filter-images-image" src="images/portfolio/portfolio-8.jpg" alt=""></div>
+                            <div><img class = "portfolio-filter-images-image" src="images/portfolio/portfolio-9.jpg" alt=""></div>
+                        </div>
+                        <br>
+
+                        <div class = "portfolio-filter-images-1">
+
+                            <div><img class = "portfolio-filter-images-image" src="images/portfolio/portfolio-6.jpg" alt=""></div>
+                            <div><img class = "portfolio-filter-images-image" src="images/portfolio/portfolio-5.jpg" alt=""></div>
+                            <div><img class = "portfolio-filter-images-image" src="images/portfolio/portfolio-4.jpg" alt=""></div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class = "Services1">
+                <div class = "services-section">
+                    <h2 id = "Services1">
+                        Services
+                    </h2>
+                    <br>
+                    <hr size = "10px" color = blue width = 5% id = "hr3">
+                    <div class = "para-text" id = "p3">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cum deleniti deserunt, explicabo ipsam odit sequi soluta vitae voluptates! Assumenda at ipsam libero maxime omnis possimus quia ullam voluptates! Explicabo!
+                        </p>
+                    </div>
+                    <div class = "services-content">
+                        <div class = "services-content-1">
+                            <div class = "services-content-one">
+                                <div><img class = "services-content-images" src="images\testimonials\phone-solid.svg" alt=""></div>
+                                <div class = "services-content-text">
+                                    <div><b>Lorem ipsum.</b></div>
+                                    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, quisquam.</div>
+                                </div>
+                            </div>
+                            <div class = "services-content-one">
+                                <div><img class = "services-content-images" src="images\testimonials\phone-solid.svg" alt=""></div>
+                                <div>
+                                    <div><b>Lorem ipsum.</b></div>
+                                    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, unde?</div>
+                                </div>
+                            </div>
+                            <div class = "services-content-one">
+                                <div><img class = "services-content-images" src="images\testimonials\phone-solid.svg" alt=""></div>
+                                <div>
+                                    <div><b>Lorem ipsum.</b></div>
+                                    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, voluptate.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class = "services-content-2">
+                            <div class = "services-content-two">
+                                <div><img class = "services-content-images" src="images\testimonials\phone-solid.svg" alt=""></div>
+                                <div>
+                                    <div><b>Lorem ipsum.</b></div>
+                                    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, hic?</div>
+                                </div>
+                            </div>
+                            <div class = "services-content-two">
+                                <div><img class = "services-content-images" src="images\testimonials\phone-solid.svg" alt=""></div>
+                                <div>
+                                    <div><b>Lorem ipsum.</b></div>
+                                    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, pariatur.</div>
+                                </div>
+                            </div>
+                            <div class = "services-content-two">
+                                <div><img class = "services-content-images" src="images\testimonials\phone-solid.svg" alt=""></div>
+                                <div>
+                                    <div><b>Lorem ipsum.</b></div>
+                                    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, temporibus.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "Testimonial1">
+                <div class = "testimonial-section">
+                    <h2 id = "Testimonial1">
+                        Testimonials
+                    </h2>
+                    <br>
+                    <hr size = "10px" color = blue width = 5% id = "hr4">
+                    <div class = "para-text" id = "p4">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cum deleniti deserunt, explicabo ipsam odit sequi soluta vitae voluptates! Assumenda at ipsam libero maxime omnis possimus quia ullam voluptates! Explicabo!
+                        </p>
+                    </div>
+                    <br><br>
+                    <div class = "testimonial-message">
+                        <div class="testimonial-message-1">
+                            <span class = "message"><img src="quote%201.svg" alt=""></span>
+                            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam exercitationem itaque praesentium. A alias autem cupiditate error, fugiat harum minima natus quam quas quibusdam repellat sunt tenetur totam, unde veniam.</span>
+                            <span class = "message"><img src="quote%202.svg" alt=""></span>
+                           
+                        </div>
+
+                        <div class="testimonial-message-1">
+                            <span class = "message"><img src="quote%201.svg" alt=""></span>
+                            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam exercitationem itaque praesentium. A alias autem cupiditate error, fugiat harum minima natus quam quas quibusdam repellat sunt tenetur totam, unde veniam.</span>
+                            <span class = "message"><img src="quote%202.svg" alt=""></span>
+                        </div>
+                        <div class="testimonial-message-1">
+                            <span class = "message"><img src="quote%201.svg" alt=""></span>
+                            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam exercitationem itaque praesentium. A alias autem cupiditate error, fugiat harum minima natus quam quas quibusdam repellat sunt tenetur totam, unde veniam.</span>
+                            <span class = "message"><img src="quote%202.svg" alt=""></span>
+                        </div>
+                    </div>
+                    <br><br><br>
+                    <div class = "testimonial-peoples">
+                        <div class = "testimonial-peoples-1">
+                            <div>
+                                <img id = "testimonialpeople1" src="images/testimonials/testimonials-3.jpg" alt="">
+                            </div>
+                            <div>
+                                <b>Soul Goodman</b>
+                            </div>
+                            <div>
+                                CEO & Founder
+                            </div>
+                        </div>
+                        <div class = "testimonial-peoples-1">
+                            <div>
+                                <img id = "testimonialpeople2" src="images/testimonials/testimonials-1.jpg" alt="">
+                            </div>
+                            <div>
+                                <b>John Larson</b>
+                            </div>
+                            <div>
+                                Enterpreneur
+                            </div>
+                        </div>
+                        <div class = "testimonial-peoples-1">
+                            <div>
+                                <img id = "testimonialpeople3" src="images/testimonials/testimonials-2.jpg" alt="">
+                            </div>
+                            <div>
+                                <b>Sara Wilsson</b>
+                            </div>
+                            <div>
+                                Designer
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "Contact1">
+                <div class = "contact-section">
+                    <h2 id = "Contact1">
+                        Contact Me
+                    </h2>
+                    <br>
+                    <hr size = "10px" color = blue width = 5% id = "hr5">
+                    <div class = "para-text" id = "p5">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cum deleniti deserunt, explicabo ipsam odit sequi soluta vitae voluptates! Assumenda at ipsam libero maxime omnis possimus quia ullam voluptates! Explicabo!
+                        </p>
+                    </div>
+                    <br><br>
+                    
+                    
+                    <div class = "contact-content">
+                        <div class = "contact-content-left">
+                            <div class = "left-contact">
+                                <div class = "location">
+                                    <div>
+                                        <img src="images\testimonials\location-crosshairs-solid.svg" alt="">
+                                    </div>
+                                    <div>
+                                        <div><b>Location</b></div>
+                                        <div>
+                                            Jaipur , Rajasthan
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class = "email">
+                                    <div>
+                                        <img src="images\testimonials\email.svg" alt="">
+                                    </div>
+                                    <div>
+                                        <div><b>Email</b></div>
+                                        <div>bhavyajain4274@gmail.com</div>
+                                    </div>
+                                </div>
+                                <div class = "call">
+                                    <div>
+                                        <img src="images\testimonials\phone-solid.svg" alt="">
+                                    </div>
+                                    <div>
+                                        <div><b>Call:</b></div>
+                                        <div>7990047081</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br><br>
+                            <div class = "location-map">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.919634056186!2d77.65459117413539!3d12.848467117567852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae6d39bc683cd5%3A0x51af52144352b21b!2sStanza%20Living%20Lisbon%20House%20%7C%20Coliving%20PG%20in%20Electronic%20City%20Phase%201!5e0!3m2!1sen!2sin!4v1701600410741!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+
+                        </div>
+                        <div class = "contact-content-right">
+                            <form class = "contact-form">
+                                <div class = "form-part-1-one">
+                                    <div>
+                                       Your Name:
+                                    </div>
+                                    <div>
+                                        Your Email:
+                                    </div>
+                                </div>
+                                <div class = "form-part-1-two">
+                                    <input type="text">
+                                    <input type="text">
+                                </div>
+                                <div class = "form-part-2-one">
+                                    <div>
+                                        Subject:
+                                    </div>
+                                </div>
+                                <div class = "form-part-2-two">
+                                    <input size = "50" type="text">
+                                </div>
+
+                                <div class = "form-part-3-one">
+                                    <div>
+                                        Message:
+                                    </div>
+                                </div>
+                                <div class = "form-part-3-two">
+                                    <textarea name="" id="" cols="100" rows="15">
+
+                                    </textarea>
+                                </div>
+
+                                <div class = "submit-button">
+                                    <button id = "submit">
+                                        Submit
+                                    </button>
+                                </div>
+
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <a href="#Home1" id = "direct-scroll-up">
+                <img id = "up" src="up.svg" alt="">
+            </a>
         </div>
-        <div id="contact"> <!-- Contact Me section content --> </div>
 
-        </div>
+    </aside>
 
-<script>
-// Get all sections and navigation links
-const sections = document.querySelectorAll('.main-content > div');
-const navLinks = document.querySelectorAll('.items');
+</section>
 
-// Create an intersection observer
-const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            // Remove 'active' class from all navigation items
-            navLinks.forEach(item => item.classList.remove('active'));
-
-            // Add 'active' class to the corresponding navigation link
-            const id = entry.target.getAttribute('id');
-            const navLink = document.querySelector(`.items[href="#${id}"]`);
-            navLink.classList.add('active');
-        }
-    });
-}, { threshold: 0.1 }); // Adjust the threshold value as needed
-
-// Observe all sections
-sections.forEach(section => observer.observe(section));
-</script>
 </body>
 </html>
